@@ -1,4 +1,3 @@
-// OOP Topics: Classes, Exception Handling, Driver Application
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
@@ -17,7 +16,6 @@ public class Main {
             playerName = "Student";
         }
 
-        // STEP 1: Upload / specify the question bank file
         QuestionLoaderInterface loader = new FileQuestionLoader();
         Question[] questions = null;
 
@@ -34,7 +32,6 @@ public class Main {
             }
 
             try {
-                // Topic: Exception Handling
                 questions = loader.loadQuestions(filePath);
                 System.out.println(">> Success: Loaded " + questions.length + " total questions from '" + filePath + "'!");
             } catch (FileNotFoundException e) {
@@ -54,7 +51,6 @@ public class Main {
         boolean playAgain = true;
 
         while (playAgain) {
-            // STEP 2: Choose difficulty
             String selectedDifficulty = "";
             while (true) {
                 System.out.println("\n-------------------------------------------------");
@@ -79,14 +75,12 @@ public class Main {
                 }
             }
 
-            // STEP 3: Conduct the 5-question quiz and show final score
             try {
                 quizManager.startQuiz(selectedDifficulty, playerName, scanner);
             } catch (QuizException e) {
                 System.out.println(">> ERROR STARTING QUIZ: " + e.getMessage());
             }
 
-            // Ask if the user wants another attempt
             System.out.print("\nWould you like to try another difficulty? (yes/no): ");
             String retry = scanner.nextLine().trim().toLowerCase();
             if (!retry.equals("yes") && !retry.equals("y")) {
