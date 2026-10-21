@@ -1,0 +1,15 @@
+Easy|What is the default value of a boolean variable in Java?|true|false|0|null|2
+Easy|Which keyword is used to inherit a class in Java?|implement|extends|inherits|super|2
+Easy|What is the size of an int data type in Java?|2 bytes|4 bytes|8 bytes|16 bytes|2
+Easy|Which method is the main entry point of any Java program?|start()|run()|main()|init()|3
+Easy|Which of these is NOT a primitive data type in Java?|int|float|String|char|3
+Medium|Which concept allows multiple methods to have the same name with different parameters?|Method Overriding|Method Overloading|Inheritance|Encapsulation|2
+Medium|Which keyword is used to prevent a class from being inherited in Java?|static|final|abstract|const|2
+Medium|An abstract class in Java can contain which of the following?|Only abstract methods|Only concrete methods|Both abstract and concrete methods|No methods allowed|3
+Medium|Which exception is thrown when an array is accessed with an invalid index?|NullPointerException|ArrayIndexOutOfBoundsException|ArithmeticException|ClassNotFoundException|2
+Medium|Which block in Java always executes regardless of whether an exception occurs?|try|catch|finally|throw|3
+Hard|What is true about interface methods in Java?|They are private by default|They are public and abstract by default|They must have a body|They cannot be inherited|2
+Hard|Can a constructor in Java be declared as final or static?|Yes, both are allowed|No, neither is allowed|Only final is allowed|Only static is allowed|2
+Hard|Which class is used for efficient character-based file reading with line buffering?|FileInputStream|FileReader|BufferedReader|DataInputStream|3
+Hard|Which keyword is used to explicitly throw an exception object in Java?|throws|throw|try|catch|2
+Hard|Can an interface extend another interface in Java?|No, interfaces cannot inherit|Yes, using the extends keyword|Yes, using the implements keyword|Only abstract classes can do so|2
